@@ -8,4 +8,4 @@ members = ["macros"]
 
 [dependencies]
 errors-macros = { version = "0.1.0", path = "macros" }
-snafu = "0.8.5"
+snafu = "0.8.6"
