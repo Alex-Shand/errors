@@ -36,7 +36,10 @@ impl Direct {
         }: ItemStruct,
     ) -> Result<Self> {
         if display_args.is_empty() {
-            return Err(proc::meta::required_argument_error("display"));
+            return Err(proc::meta::required_argument_error(
+                "display",
+                ident.span(),
+            ));
         }
         if !generics.params.is_empty() {
             return Err(Error::new_spanned(
