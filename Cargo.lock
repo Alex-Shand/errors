@@ -63,7 +63,7 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 [[package]]
 name = "proc"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "proc_attribute",
  "proc_common",
@@ -93,7 +93,7 @@ dependencies = [
 [[package]]
 name = "proc_attribute"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "proc_common",
 ]
@@ -101,7 +101,7 @@ dependencies = [
 [[package]]
 name = "proc_common"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -113,7 +113,7 @@ dependencies = [
 [[package]]
 name = "proc_derive"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "convert_case",
  "proc_attribute",
@@ -123,7 +123,7 @@ dependencies = [
 [[package]]
 name = "proc_function"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "proc_attribute",
  "proc_common",
@@ -132,7 +132,7 @@ dependencies = [
 [[package]]
 name = "proc_parse"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#a870c69b60e4b309a9d07aaf26a289746ffe99f9"
+source = "git+https://github.com/Alex-Shand/proc.git#5e104c07bc3aca9739a34189c841cf1dd2a1261a"
 dependencies = [
  "proc_common",
  "proc_derive",
@@ -140,9 +140,9 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "1.0.40"
+version = "1.0.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1885c039570dc00dcb4ff087a89e185fd56bae234ddc7f056a945bf36467248d"
+checksum = "ce25767e7b499d1b604768e7cde645d14cc8584231ea6b295e9c9eb22c02e1d1"
 dependencies = [
  "proc-macro2",
 ]
