@@ -66,6 +66,11 @@ impl ToTokens for WithWhatever {
         } = self;
         let (details_name, details_context_name, public_context_name) =
             self.generate_details_names();
+        let wrapped_error_arg =
+            wrapped_error.as_ref().map(|w| quote!(wrapping = #w,));
+        let context_vis_arg =
+            context_vis.as_ref().map(|c| quote!(context = #c,));
+        let backtrace_arg = backtrace.as_ref().map(|b| quote!(backtrace #b,));
         tokens.extend(quote! {
             #(#attrs)*
             #[#crate_::union(crate = #crate_, test_whatever)]
@@ -75,10 +80,10 @@ impl ToTokens for WithWhatever {
             #(#attrs)*
             #[#crate_::error(
                 crate = #crate_,
-                #(wrapping = #wrapped_error,)?
-                #(context = #context_vis,)?
+                #wrapped_error_arg
+                #context_vis_arg
                 display(#(#display_args),*),
-                #(backtrace #backtrace)?
+                #backtrace_arg
             )]
             #vis struct #details_name #generics #fields
         });

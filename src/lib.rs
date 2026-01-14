@@ -40,6 +40,9 @@
 /// the struct will actually become an enum to accommodate the
 /// [`Whatever`](snafu::Whatever) branch.
 pub use errors_macros::error;
+/// Adds a helper method (`fr()`) to the type to allow using [snafus](`snafu`)
+/// automatic `Into` conversion to automatically clone references.
+pub use errors_macros::from_ref;
 /// Generate a union of multiple other errors
 ///
 /// # Meta Arguments

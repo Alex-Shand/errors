@@ -109,6 +109,7 @@ impl ToTokens for Variant {
                 }
             },
             Variant::Whatever => quote! {
+                #[allow(missing_docs)]
                 #[cfg(test)]
                 #[snafu(whatever)]
                 Whatever { message: String }

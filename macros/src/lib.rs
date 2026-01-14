@@ -17,6 +17,7 @@
 #![allow(clippy::similar_names)]
 
 mod error;
+mod from_ref;
 mod union_;
 
 // Documented in re-export from errors
@@ -51,4 +52,11 @@ pub fn union(
     input: proc::syn::ItemType,
 ) -> proc::Result<union_::Union> {
     union_::Union::new(crate_, test_whatever, input)
+}
+
+// Documented in re-export from errors
+#[allow(missing_docs)]
+#[proc::attribute]
+pub fn from_ref(input: proc::DeriveInput) -> proc::Result<from_ref::FromRef> {
+    Ok(from_ref::FromRef::new(input))
 }
