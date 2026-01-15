@@ -63,7 +63,7 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 [[package]]
 name = "proc"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "proc_attribute",
  "proc_common",
@@ -93,7 +93,7 @@ dependencies = [
 [[package]]
 name = "proc_attribute"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "proc_common",
 ]
@@ -101,7 +101,7 @@ dependencies = [
 [[package]]
 name = "proc_common"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -113,7 +113,7 @@ dependencies = [
 [[package]]
 name = "proc_derive"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "convert_case",
  "proc_attribute",
@@ -123,7 +123,7 @@ dependencies = [
 [[package]]
 name = "proc_function"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "proc_attribute",
  "proc_common",
@@ -132,7 +132,7 @@ dependencies = [
 [[package]]
 name = "proc_parse"
 version = "0.1.0"
-source = "git+https://github.com/Alex-Shand/proc.git#b49dab419dd7cd269fc720d28c73382b1abcdea3"
+source = "git+https://github.com/Alex-Shand/proc.git#40636cc6217ab028ab9f0fbbf19ebfd356ea5544"
 dependencies = [
  "proc_common",
  "proc_derive",
