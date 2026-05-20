@@ -57,3 +57,11 @@ pub use errors_macros::from_ref;
 /// passed) as well as suitable context selectors and conversion operators.
 pub use errors_macros::union;
 pub use snafu::{self, prelude};
+
+/// Convert a [Result] to a [snafu::Report]
+pub fn create_report<E>(result: Result<(), E>) -> snafu::Report<E> {
+    match result {
+        Ok(()) => snafu::Report::ok(),
+        Err(e) => snafu::Report::from_error(e),
+    }
+}
