@@ -19,12 +19,10 @@ impl Union {
         ItemType {
             attrs,
             vis,
-            type_token: _,
             ident,
             generics,
-            eq_token: _,
             ty,
-            semi_token: _,
+            ..
         }: ItemType,
     ) -> Result<Self> {
         if !generics.params.is_empty() {
@@ -77,6 +75,7 @@ impl ToTokens for Union {
     }
 }
 
+#[expect(clippy::large_enum_variant)]
 enum Variant {
     Real { ident: Ident, ty: Type },
     Whatever,

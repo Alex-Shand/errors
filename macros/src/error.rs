@@ -13,6 +13,7 @@ mod with_whatever;
 
 pub(crate) struct Error(ErrorImpl);
 
+#[allow(clippy::large_enum_variant)]
 enum ErrorImpl {
     Direct(Direct),
     WithWhatever(WithWhatever),
@@ -55,6 +56,6 @@ impl ToTokens for Error {
         match &self.0 {
             ErrorImpl::Direct(d) => d.to_tokens(tokens),
             ErrorImpl::WithWhatever(w) => w.to_tokens(tokens),
-        };
+        }
     }
 }
